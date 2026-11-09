@@ -6,7 +6,7 @@ The contact address lives in CONTACT, so it only has to change here.
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CONTACT = "CORREO_DE_CONTACTO"
+CONTACT = "nowkotron.industries@gmail.com"
 PUBLISHER = "Nowkotron Industries"
 
 LANGS = [
