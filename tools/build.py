@@ -14,6 +14,7 @@ LANGS = [
     ("en", "privacy", "English"),
     ("pt-BR", "privacidade", "Português"),
     ("ca", "privadesa", "Català"),
+    ("gl", "privacidade-gl", "Galego"),
     ("fr", "confidentialite", "Français"),
     ("de", "datenschutz", "Deutsch"),
     ("it", "informativa-privacy", "Italiano"),
@@ -178,6 +179,39 @@ TEXT = {
             ("Salut", "<p>Les dates de Ciclo són estimacions a partir del que anotes. L’app no és un mètode anticonceptiu, no serveix per buscar un embaràs i no substitueix el consell mèdic.</p>"),
             ("Canvis en aquesta política", "<p>Si la política canvia, es publicarà aquí amb la nova data.</p>"),
             ("Contacte", f"<p>Si tens qualsevol pregunta sobre aquesta política, escriu a {MAIL}.</p>"),
+        ],
+    ),
+    "gl": dict(
+        title="Política de privacidade de Ciclo",
+        date="Última actualización: 9 de novembro de 2026",
+        summary="<strong>En resumo:</strong> Ciclo non recolle ningún dato. Todo o que anotas gárdase no teu móbil e, se tes activada a copia de seguranza de Google, nesa copia, cifrada co bloqueo da túa pantalla. Ninguén máis, nin sequera quen creou a app, ten acceso a iso.",
+        sections=[
+            ("Quen publica Ciclo", f"<p>Ciclo é unha app de {PUBLISHER}. Para calquera pregunta sobre esta política ou sobre os teus datos, escribe a {MAIL}.</p>"),
+            ("Que garda a app", """<p>Para funcionar, Ciclo garda no teu móbil:</p>
+<ul>
+  <li>As datas de inicio e fin das regras que anotas.</li>
+  <li>A túa configuración: a duración habitual do ciclo e da regra, o aspecto do asistente e que notificacións queres recibir.</li>
+  <li>O debuxo do asistente, se fas un.</li>
+  <li>A túa resposta de hoxe a «Que tal?». Substitúese ao día seguinte e non se garda ningún historial.</li>
+  <li>A última mensaxe que escribiches para «Emitir aviso», se escribes unha.</li>
+</ul>"""),
+            ("Onde se garda", "<p>No teu móbil. Ciclo non ten contas nin servidores propios, non mostra anuncios e non inclúe servizos de terceiros nin ferramentas de analítica. A app non ten permiso para conectarse a internet, así que non pode enviar nada a ningures.</p>"),
+            ("Copia de seguranza de Google", """<p>Se tes activada a copia de seguranza de Android na túa conta de Google, Android inclúe nela os datos de Ciclo, para que volvan sós se cambias a outro móbil coa mesma conta de Google ou reinstalas a app. Ciclo só permite esta copia se vai cifrada de extremo a extremo co PIN, padrón ou contrasinal da túa pantalla de bloqueo: nin Google nin quen creou a app pode lela. Se o teu móbil non ten bloqueo de pantalla, ou ten Android 8, os datos de Ciclo non se copian.</p>
+<p>Esta copia é un servizo de Android entre ti e Google: a app non envía nada pola súa conta nin recibe nada dela. Podes desactivala na configuración de Android, no apartado de copia de seguranza. Ao pasar os datos a un móbil novo por cable ou sen fíos, tamén se trasladan os de Ciclo.</p>"""),
+            ("O que sae da app porque ti o decides", """<p>Só sae de Ciclo o que ti elixes compartir ou gardar:</p>
+<ul>
+  <li><strong>Emitir aviso:</strong> unha imaxe cunha frase que envías coa app que elixas. Chega só a quen ti decidas.</li>
+  <li><strong>Informe:</strong> un PDF coas datas das túas regras que podes compartir, gardar ou imprimir.</li>
+  <li><strong>Copias:</strong> un ficheiro co estado da app que gardas onde ti elixas. Este ficheiro non ten contrasinal: gárdao nun lugar de confianza.</li>
+</ul>
+<p>Desde ese momento, eses ficheiros quedan baixo o teu control e baixo as condicións da app ou do servizo que uses para envialos ou gardalos.</p>"""),
+            ("Permisos", """<p>O único permiso que Ciclo che pide é o de mostrar notificacións, que serven para avisarte cando falta pouco para a regra ou para preguntarche se xa chegou ou se xa marchou. É opcional: podes rexeitalo ou desactivar cada aviso en Configuración.</p>
+<p>Ademais, Android concédelle á app algúns permisos técnicos para programar eses avisos, por exemplo para volver programalos cando reinicias o móbil. Ningún dá acceso a internet nin aos teus datos.</p>"""),
+            ("Como borrar os teus datos", "<p>En Configuración › Os teus datos › «Borrar todos os meus datos». Tamén se borra todo do móbil ao desinstalar a app. A copia de seguranza de Google baléirase a próxima vez que se actualiza despois de borrar os datos; se desinstalas a app, consérvase por se a volves instalar, e podes eliminala desde a copia de seguranza da túa conta de Google. As copias que gardaches ti en ficheiros non se borran: podes eliminalas ti.</p>"),
+            ("Menores", "<p>Ciclo non recolle datos de ninguén, tampouco de menores de idade.</p>"),
+            ("Saúde", "<p>As datas de Ciclo son estimacións a partir do que anotas. A app non é un método anticonceptivo, non serve para buscar un embarazo e non substitúe o consello médico.</p>"),
+            ("Cambios nesta política", "<p>Se a política cambia, publicarase aquí coa súa nova data.</p>"),
+            ("Contacto", f"<p>Se tes algunha pregunta sobre esta política, escribe a {MAIL}.</p>"),
         ],
     ),
     "fr": dict(
@@ -519,6 +553,7 @@ VERSION_NOTE = {
     "en": "This English version is the reference version of this policy. If another language version differs from it, this version prevails.",
     "pt-BR": f"A versão de referência desta política é a {EN}versão em inglês</a>. Em caso de divergência, prevalece a versão em inglês.",
     "ca": f"La versió de referència d’aquesta política és la {EN}versió en anglès</a>. Si hi ha alguna diferència entre totes dues, preval la versió en anglès.",
+    "gl": f"A versión de referencia desta política é a {EN}versión en inglés</a>. Se hai algunha diferenza entre as dúas, prevalece a versión en inglés.",
     "fr": f"La version de référence de cette politique est la {EN}version anglaise</a>. En cas de divergence, la version anglaise prévaut.",
     "de": f"Maßgeblich ist die {EN}englische Fassung</a> dieser Datenschutzerklärung. Bei Abweichungen gilt die englische Fassung.",
     "it": f"La versione di riferimento di questa informativa è la {EN}versione inglese</a>. In caso di discrepanze, prevale la versione inglese.",
